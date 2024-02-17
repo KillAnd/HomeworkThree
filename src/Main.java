@@ -1,13 +1,12 @@
 public class Main {
     public static void main(String[] args) {
 
-        byte whiteColor = 2;
-        byte brownColor = 4;
-        byte fullColor = 120;
-        int totalClassRoom = fullColor/(whiteColor+brownColor);
-        int totalWhiteColor = totalClassRoom*whiteColor;
-        int totalBrownColor = totalClassRoom*brownColor;
+        byte wtBanan = 80;
+        float wtGrMilk = 100 / 105f;
+        byte wtIceCream = 100;
+        byte wtEgg = 70;
+        float receptFullWt = (wtBanan*5)+(wtGrMilk*200)+(wtIceCream*2)+(wtEgg*4);
 
-        System.out.println("В школе, где " + totalClassRoom + " классов, нужно " + totalWhiteColor + " банок белой краски и " + totalBrownColor + " банок коричневой краски");
+        System.out.println(receptFullWt);
     }
 }
