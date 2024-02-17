@@ -1,13 +1,21 @@
 public class Main {
     public static void main(String[] args) {
 
-        byte wtBanan = 80;
-        float wtGrMilk = 100 / 105f;
-        byte wtIceCream = 100;
-        byte wtEgg = 70;
-        float receptFullWt = (wtBanan*5)+(wtGrMilk*200)+(wtIceCream*2)+(wtEgg*4);
+        short minWtGm = 250;
+        short maxWtGm = 500;
+        byte outKg = 7;
 
-        System.out.println(receptFullWt + " Гр");
-        System.out.println((receptFullWt/1000) + " Кг");
+        int minTimeInDay = (outKg*1000)/minWtGm;
+        int maxTimeInDay = (outKg*1000)/maxWtGm;
+
+        System.out.println(minTimeInDay + " дней на похудение если по 250гр");
+        System.out.println(maxTimeInDay + " дней на похудение если по 500гр");
+
+        float mediumWtGm = (minWtGm+maxWtGm)/2f;
+        float mediumTimeInDay = (outKg*1000)/mediumWtGm;
+
+
+        System.out.println(mediumTimeInDay + " дней в среднем уйдет на похудение");
+
     }
 }
