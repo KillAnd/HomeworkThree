@@ -1,21 +1,27 @@
 public class Main {
     public static void main(String[] args) {
 
-        short minWtGm = 250;
-        short maxWtGm = 500;
-        byte outKg = 7;
+        int mashaMoney = 67760;
+        int denisMoney = 83690;
+        int kristinaMoney = 76230;
 
-        int minTimeInDay = (outKg*1000)/minWtGm;
-        int maxTimeInDay = (outKg*1000)/maxWtGm;
+        int indexMashaMoney = (mashaMoney*10/100)+mashaMoney;
+        int indexDenisMoney = (denisMoney*10/100)+denisMoney;
+        int indexKristinaMoney = (kristinaMoney*10/100)+kristinaMoney;
 
-        System.out.println(minTimeInDay + " дней на похудение если по 250гр");
-        System.out.println(maxTimeInDay + " дней на похудение если по 500гр");
+        int yearMoneyMasha = mashaMoney*12;
+        int yearMoneyDenis = denisMoney*12;
+        int yearMoneyKristina = kristinaMoney*12;
 
-        float mediumWtGm = (minWtGm+maxWtGm)/2f;
-        float mediumTimeInDay = (outKg*1000)/mediumWtGm;
+        int differentYearMoneyMasha = (indexMashaMoney*12)-yearMoneyMasha;
+        int differentYearMoneyDenis = (indexDenisMoney*12)-yearMoneyDenis;
+        int differentYearMoneyKristina = (indexKristinaMoney*12)-yearMoneyKristina;
 
-
-        System.out.println(mediumTimeInDay + " дней в среднем уйдет на похудение");
-
+        System.out.println("Маша теперь получает " + indexMashaMoney + " рублей. " +
+                "Годовой доход вырос на " + differentYearMoneyMasha + " рублей.");
+        System.out.println("Денис теперь получает " + indexDenisMoney + " рублей. " +
+                "Годовой доход вырос на " + differentYearMoneyDenis + " рублей.");
+        System.out.println("Кристина теперь получает " + indexKristinaMoney + " рублей. " +
+                "Годовой доход вырос на " + differentYearMoneyKristina + " рублей.");
     }
 }
