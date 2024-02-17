@@ -7,6 +7,7 @@ public class Main {
         byte wtEgg = 70;
         float receptFullWt = (wtBanan*5)+(wtGrMilk*200)+(wtIceCream*2)+(wtEgg*4);
 
-        System.out.println(receptFullWt);
+        System.out.println(receptFullWt + " Гр");
+        System.out.println((receptFullWt/1000) + " Кг");
     }
 }
