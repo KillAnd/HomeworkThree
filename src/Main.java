@@ -1,18 +1,27 @@
 public class Main {
     public static void main(String[] args) {
 
-        byte oneTic = 8;
-        short twoTic = 100;
-        int threeTic = 200;
-        long forTic = 1000;
-        float fiveTic = 1.3f;
-        double sixTic = 13.88;
+        int mashaMoney = 67760;
+        int denisMoney = 83690;
+        int kristinaMoney = 76230;
 
-        System.out.println("Значение переменной oneTic с типом byte равно " + oneTic);
-        System.out.println("Значение переменной twoTic с типом short равно " + twoTic);
-        System.out.println("Значение переменной threeTic с типом int равно " + threeTic);
-        System.out.println("Значение переменной forTic с типом long равно " + forTic);
-        System.out.println("Значение переменной fiveTic с типом float равно " + fiveTic);
-        System.out.println("Значение переменной sixTic с типом double равно " + sixTic);
+        int indexMashaMoney = (mashaMoney*10/100)+mashaMoney;
+        int indexDenisMoney = (denisMoney*10/100)+denisMoney;
+        int indexKristinaMoney = (kristinaMoney*10/100)+kristinaMoney;
+
+        int yearMoneyMasha = mashaMoney*12;
+        int yearMoneyDenis = denisMoney*12;
+        int yearMoneyKristina = kristinaMoney*12;
+
+        int differentYearMoneyMasha = (indexMashaMoney*12)-yearMoneyMasha;
+        int differentYearMoneyDenis = (indexDenisMoney*12)-yearMoneyDenis;
+        int differentYearMoneyKristina = (indexKristinaMoney*12)-yearMoneyKristina;
+
+        System.out.println("Маша теперь получает " + indexMashaMoney + " рублей. " +
+                "Годовой доход вырос на " + differentYearMoneyMasha + " рублей.");
+        System.out.println("Денис теперь получает " + indexDenisMoney + " рублей. " +
+                "Годовой доход вырос на " + differentYearMoneyDenis + " рублей.");
+        System.out.println("Кристина теперь получает " + indexKristinaMoney + " рублей. " +
+                "Годовой доход вырос на " + differentYearMoneyKristina + " рублей.");
     }
 }
